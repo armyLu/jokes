@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77A0E00827B4E7D70065D67D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A0E00727B4E7D70065D67D /* AppDelegate.m */; };
+		77A0E00B27B4E7D70065D67D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A0E00A27B4E7D70065D67D /* SceneDelegate.m */; };
+		77A0E01127B4E7D70065D67D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A0E00F27B4E7D70065D67D /* Main.storyboard */; };
+		77A0E01327B4E7D90065D67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A0E01227B4E7D90065D67D /* Assets.xcassets */; };
+		77A0E01627B4E7D90065D67D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A0E01427B4E7D90065D67D /* LaunchScreen.storyboard */; };
+		77A0E01927B4E7D90065D67D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A0E01827B4E7D90065D67D /* main.m */; };
+		77AB61F727B4E90900060D0D /* JKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB61F627B4E90900060D0D /* JKTabBarController.m */; };
+		77AB61FA27B4E9A300060D0D /* JKJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB61F927B4E9A300060D0D /* JKJokeController.m */; };
+		77AB620127B4EA2A00060D0D /* JKNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB620027B4EA2A00060D0D /* JKNetworkUtil.m */; };
+		77AB620427B4EA3800060D0D /* JKViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB620327B4EA3800060D0D /* JKViewControllerUtil.m */; };
+		77AB620727B4EA4700060D0D /* NSDictionary+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB620627B4EA4700060D0D /* NSDictionary+Util.m */; };
+		77AB620A27B4EA5300060D0D /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB620927B4EA5300060D0D /* UIImageView+Util.m */; };
+		77AB620D27B4EA5E00060D0D /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB620C27B4EA5E00060D0D /* NSString+MD5.m */; };
+		77AB621127B4EA7400060D0D /* JKJokeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB621027B4EA7400060D0D /* JKJokeModel.m */; };
+		77AB621427B4EA8400060D0D /* JKJokeCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB621327B4EA8400060D0D /* JKJokeCommentModel.m */; };
+		77AB621727B4EA8D00060D0D /* JKUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB621627B4EA8D00060D0D /* JKUserModel.m */; };
+		77AB621B27B4EAAA00060D0D /* JKAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB621A27B4EAAA00060D0D /* JKAboutController.m */; };
+		77AB621E27B4EAC300060D0D /* JKJokeCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB621D27B4EAC300060D0D /* JKJokeCommentController.m */; };
+		77AB622227B4EC7D00060D0D /* JKJokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB622127B4EC7D00060D0D /* JKJokeCell.m */; };
+		77AB622527B4EC8900060D0D /* JKShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB622427B4EC8900060D0D /* JKShowImageView.m */; };
+		77AB622827B4ECA500060D0D /* JKLoadMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB622727B4ECA500060D0D /* JKLoadMoreView.m */; };
+		77AB622A27B4ECAF00060D0D /* JKLoadMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77AB622927B4ECAF00060D0D /* JKLoadMoreView.xib */; };
+		77AB622D27B4ECC500060D0D /* JKJokeCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AB622C27B4ECC500060D0D /* JKJokeCommentCell.m */; };
+		77AB622F27B4EE3800060D0D /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AB622E27B4EE3800060D0D /* avatar.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77A0E00327B4E7D70065D67D /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A0E00627B4E7D70065D67D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77A0E00727B4E7D70065D67D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77A0E00927B4E7D70065D67D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		77A0E00A27B4E7D70065D67D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		77A0E01027B4E7D70065D67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77A0E01227B4E7D90065D67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77A0E01527B4E7D90065D67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77A0E01727B4E7D90065D67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A0E01827B4E7D90065D67D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77AB61F527B4E90900060D0D /* JKTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTabBarController.h; sourceTree = "<group>"; };
+		77AB61F627B4E90900060D0D /* JKTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTabBarController.m; sourceTree = "<group>"; };
+		77AB61F827B4E9A300060D0D /* JKJokeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeController.h; sourceTree = "<group>"; };
+		77AB61F927B4E9A300060D0D /* JKJokeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeController.m; sourceTree = "<group>"; };
+		77AB61FF27B4EA2A00060D0D /* JKNetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKNetworkUtil.h; sourceTree = "<group>"; };
+		77AB620027B4EA2A00060D0D /* JKNetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKNetworkUtil.m; sourceTree = "<group>"; };
+		77AB620227B4EA3800060D0D /* JKViewControllerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewControllerUtil.h; sourceTree = "<group>"; };
+		77AB620327B4EA3800060D0D /* JKViewControllerUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKViewControllerUtil.m; sourceTree = "<group>"; };
+		77AB620527B4EA4700060D0D /* NSDictionary+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Util.h"; sourceTree = "<group>"; };
+		77AB620627B4EA4700060D0D /* NSDictionary+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Util.m"; sourceTree = "<group>"; };
+		77AB620827B4EA5300060D0D /* UIImageView+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Util.h"; sourceTree = "<group>"; };
+		77AB620927B4EA5300060D0D /* UIImageView+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Util.m"; sourceTree = "<group>"; };
+		77AB620B27B4EA5E00060D0D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		77AB620C27B4EA5E00060D0D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		77AB620F27B4EA7400060D0D /* JKJokeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeModel.h; sourceTree = "<group>"; };
+		77AB621027B4EA7400060D0D /* JKJokeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeModel.m; sourceTree = "<group>"; };
+		77AB621227B4EA8400060D0D /* JKJokeCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentModel.h; sourceTree = "<group>"; };
+		77AB621327B4EA8400060D0D /* JKJokeCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentModel.m; sourceTree = "<group>"; };
+		77AB621527B4EA8D00060D0D /* JKUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKUserModel.h; sourceTree = "<group>"; };
+		77AB621627B4EA8D00060D0D /* JKUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKUserModel.m; sourceTree = "<group>"; };
+		77AB621927B4EAAA00060D0D /* JKAboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKAboutController.h; sourceTree = "<group>"; };
+		77AB621A27B4EAAA00060D0D /* JKAboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAboutController.m; sourceTree = "<group>"; };
+		77AB621C27B4EAC300060D0D /* JKJokeCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentController.h; sourceTree = "<group>"; };
+		77AB621D27B4EAC300060D0D /* JKJokeCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentController.m; sourceTree = "<group>"; };
+		77AB622027B4EC7D00060D0D /* JKJokeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeCell.h; sourceTree = "<group>"; };
+		77AB622127B4EC7D00060D0D /* JKJokeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeCell.m; sourceTree = "<group>"; };
+		77AB622327B4EC8900060D0D /* JKShowImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKShowImageView.h; sourceTree = "<group>"; };
+		77AB622427B4EC8900060D0D /* JKShowImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKShowImageView.m; sourceTree = "<group>"; };
+		77AB622627B4ECA500060D0D /* JKLoadMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLoadMoreView.h; sourceTree = "<group>"; };
+		77AB622727B4ECA500060D0D /* JKLoadMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLoadMoreView.m; sourceTree = "<group>"; };
+		77AB622927B4ECAF00060D0D /* JKLoadMoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JKLoadMoreView.xib; sourceTree = "<group>"; };
+		77AB622B27B4ECC500060D0D /* JKJokeCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentCell.h; sourceTree = "<group>"; };
+		77AB622C27B4ECC500060D0D /* JKJokeCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentCell.m; sourceTree = "<group>"; };
+		77AB622E27B4EE3800060D0D /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77A0E00027B4E7D70065D67D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77A0DFFA27B4E7D70065D67D = {
+			isa = PBXGroup;
+			children = (
+				77A0E00527B4E7D70065D67D /* Jokes */,
+				77A0E00427B4E7D70065D67D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77A0E00427B4E7D70065D67D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77A0E00327B4E7D70065D67D /* Jokes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77A0E00527B4E7D70065D67D /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				77AB621F27B4EC6C00060D0D /* View */,
+				77AB621827B4EA9200060D0D /* Controller */,
+				77AB620E27B4EA6400060D0D /* Model */,
+				77AB61FB27B4E9E300060D0D /* Util */,
+				77A0E00627B4E7D70065D67D /* AppDelegate.h */,
+				77A0E00727B4E7D70065D67D /* AppDelegate.m */,
+				77A0E00927B4E7D70065D67D /* SceneDelegate.h */,
+				77A0E00A27B4E7D70065D67D /* SceneDelegate.m */,
+				77AB61F527B4E90900060D0D /* JKTabBarController.h */,
+				77AB61F627B4E90900060D0D /* JKTabBarController.m */,
+				77AB622E27B4EE3800060D0D /* avatar.jpg */,
+				77AB61F827B4E9A300060D0D /* JKJokeController.h */,
+				77AB61F927B4E9A300060D0D /* JKJokeController.m */,
+				77A0E00F27B4E7D70065D67D /* Main.storyboard */,
+				77A0E01227B4E7D90065D67D /* Assets.xcassets */,
+				77A0E01427B4E7D90065D67D /* LaunchScreen.storyboard */,
+				77A0E01727B4E7D90065D67D /* Info.plist */,
+				77A0E01827B4E7D90065D67D /* main.m */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		77AB61FB27B4E9E300060D0D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				77AB61FF27B4EA2A00060D0D /* JKNetworkUtil.h */,
+				77AB620027B4EA2A00060D0D /* JKNetworkUtil.m */,
+				77AB620227B4EA3800060D0D /* JKViewControllerUtil.h */,
+				77AB620327B4EA3800060D0D /* JKViewControllerUtil.m */,
+				77AB620527B4EA4700060D0D /* NSDictionary+Util.h */,
+				77AB620627B4EA4700060D0D /* NSDictionary+Util.m */,
+				77AB620827B4EA5300060D0D /* UIImageView+Util.h */,
+				77AB620927B4EA5300060D0D /* UIImageView+Util.m */,
+				77AB620B27B4EA5E00060D0D /* NSString+MD5.h */,
+				77AB620C27B4EA5E00060D0D /* NSString+MD5.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		77AB620E27B4EA6400060D0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77AB620F27B4EA7400060D0D /* JKJokeModel.h */,
+				77AB621027B4EA7400060D0D /* JKJokeModel.m */,
+				77AB621227B4EA8400060D0D /* JKJokeCommentModel.h */,
+				77AB621327B4EA8400060D0D /* JKJokeCommentModel.m */,
+				77AB621527B4EA8D00060D0D /* JKUserModel.h */,
+				77AB621627B4EA8D00060D0D /* JKUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77AB621827B4EA9200060D0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77AB621927B4EAAA00060D0D /* JKAboutController.h */,
+				77AB621A27B4EAAA00060D0D /* JKAboutController.m */,
+				77AB621C27B4EAC300060D0D /* JKJokeCommentController.h */,
+				77AB621D27B4EAC300060D0D /* JKJokeCommentController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77AB621F27B4EC6C00060D0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77AB622027B4EC7D00060D0D /* JKJokeCell.h */,
+				77AB622127B4EC7D00060D0D /* JKJokeCell.m */,
+				77AB622327B4EC8900060D0D /* JKShowImageView.h */,
+				77AB622427B4EC8900060D0D /* JKShowImageView.m */,
+				77AB622627B4ECA500060D0D /* JKLoadMoreView.h */,
+				77AB622727B4ECA500060D0D /* JKLoadMoreView.m */,
+				77AB622927B4ECAF00060D0D /* JKLoadMoreView.xib */,
+				77AB622B27B4ECC500060D0D /* JKJokeCommentCell.h */,
+				77AB622C27B4ECC500060D0D /* JKJokeCommentCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77A0E00227B4E7D70065D67D /* Jokes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A0E01C27B4E7D90065D67D /* Build configuration list for PBXNativeTarget "Jokes" */;
+			buildPhases = (
+				77A0DFFF27B4E7D70065D67D /* Sources */,
+				77A0E00027B4E7D70065D67D /* Frameworks */,
+				77A0E00127B4E7D70065D67D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jokes;
+			productName = Jokes;
+			productReference = 77A0E00327B4E7D70065D67D /* Jokes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77A0DFFB27B4E7D70065D67D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					77A0E00227B4E7D70065D67D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 77A0DFFE27B4E7D70065D67D /* Build configuration list for PBXProject "Jokes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77A0DFFA27B4E7D70065D67D;
+			productRefGroup = 77A0E00427B4E7D70065D67D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77A0E00227B4E7D70065D67D /* Jokes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77A0E00127B4E7D70065D67D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A0E01627B4E7D90065D67D /* LaunchScreen.storyboard in Resources */,
+				77AB622F27B4EE3800060D0D /* avatar.jpg in Resources */,
+				77A0E01327B4E7D90065D67D /* Assets.xcassets in Resources */,
+				77AB622A27B4ECAF00060D0D /* JKLoadMoreView.xib in Resources */,
+				77A0E01127B4E7D70065D67D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77A0DFFF27B4E7D70065D67D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AB61F727B4E90900060D0D /* JKTabBarController.m in Sources */,
+				77AB621B27B4EAAA00060D0D /* JKAboutController.m in Sources */,
+				77AB621127B4EA7400060D0D /* JKJokeModel.m in Sources */,
+				77A0E00827B4E7D70065D67D /* AppDelegate.m in Sources */,
+				77A0E01927B4E7D90065D67D /* main.m in Sources */,
+				77AB622527B4EC8900060D0D /* JKShowImageView.m in Sources */,
+				77AB620427B4EA3800060D0D /* JKViewControllerUtil.m in Sources */,
+				77AB622227B4EC7D00060D0D /* JKJokeCell.m in Sources */,
+				77AB620D27B4EA5E00060D0D /* NSString+MD5.m in Sources */,
+				77AB620A27B4EA5300060D0D /* UIImageView+Util.m in Sources */,
+				77A0E00B27B4E7D70065D67D /* SceneDelegate.m in Sources */,
+				77AB61FA27B4E9A300060D0D /* JKJokeController.m in Sources */,
+				77AB622827B4ECA500060D0D /* JKLoadMoreView.m in Sources */,
+				77AB620727B4EA4700060D0D /* NSDictionary+Util.m in Sources */,
+				77AB622D27B4ECC500060D0D /* JKJokeCommentCell.m in Sources */,
+				77AB621727B4EA8D00060D0D /* JKUserModel.m in Sources */,
+				77AB620127B4EA2A00060D0D /* JKNetworkUtil.m in Sources */,
+				77AB621427B4EA8400060D0D /* JKJokeCommentModel.m in Sources */,
+				77AB621E27B4EAC300060D0D /* JKJokeCommentController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77A0E00F27B4E7D70065D67D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A0E01027B4E7D70065D67D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77A0E01427B4E7D90065D67D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A0E01527B4E7D90065D67D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77A0E01A27B4E7D90065D67D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77A0E01B27B4E7D90065D67D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77A0E01D27B4E7D90065D67D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TH2YZ8H29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jokes/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujun.Jokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77A0E01E27B4E7D90065D67D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TH2YZ8H29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jokes/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujun.Jokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77A0DFFE27B4E7D70065D67D /* Build configuration list for PBXProject "Jokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A0E01A27B4E7D90065D67D /* Debug */,
+				77A0E01B27B4E7D90065D67D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A0E01C27B4E7D90065D67D /* Build configuration list for PBXNativeTarget "Jokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A0E01D27B4E7D90065D67D /* Debug */,
+				77A0E01E27B4E7D90065D67D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77A0DFFB27B4E7D70065D67D /* Project object */;
+}
